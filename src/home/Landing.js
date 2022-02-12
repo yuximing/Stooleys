@@ -1,4 +1,3 @@
-import { Box } from "@chakra-ui/core";
 import {
   Button,
   Container,
@@ -9,7 +8,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import React from "react";
-import img from "./landingImg.png";
+import img from "../assets/landingImg.png";
 
 const Landing = () => {
   return (
