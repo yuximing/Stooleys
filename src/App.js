@@ -1,4 +1,5 @@
 import Landing from "./home/Landing";
+import Navbar from './home/Navbar'
 import { ChakraProvider } from "@chakra-ui/react";
 import AboutUs from "./home/About";
 import { extendTheme } from "@chakra-ui/react";
@@ -32,6 +33,7 @@ const theme = extendTheme({
 function App() {
   return (
     <ChakraProvider theme={theme}>
+      <Navbar />
       <Landing />
       <AboutUs />
       <OurFood />
