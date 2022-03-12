@@ -11,7 +11,7 @@ import {
 
 const Menu = () => {
   return (
-    <Box>
+    <Box h="100vh" w="100vw" bg="tomato">
       <Text>Menu</Text>
     </Box>
   );

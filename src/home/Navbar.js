@@ -1,14 +1,15 @@
-import { Box, HStack, Text, Button, Image } from "@chakra-ui/react";
+import { Box, HStack, Text, Button, Image, Link } from "@chakra-ui/react";
 import Logo from "../assets/logo.png";
 import "https://www.fbgcdn.com/embedder/js/ewm2.js";
 import "./orderbutton.css";
+import { Link as ReachLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <Box w="70%" pl="5%" pos="absolute" top="2%" zIndex="99">
-      <HStack spacing="1.7rem">
+      <HStack spacing="3.5rem">
         <Image src={Logo} boxSize="8%" mr="50px"></Image>
-        <Button
+        <Link
           variant="ghost"
           color="#FEFFFF"
           fontWeight="thin"
@@ -16,21 +17,25 @@ export default function Navbar() {
           _hover={{
             color: "#FFEEEE",
           }}
+          as={ReachLink}
+          to="/"
         >
           Home
-        </Button>
-        <Button
+        </Link>
+        <Link
           variant="ghost"
           color="#FEFFFF"
-          fontWeight="thin "
+          fontWeight="thin"
           fontSize="0.7rem"
           _hover={{
             color: "#FFEEEE",
           }}
+          as={ReachLink}
+          to="/"
         >
           About
-        </Button>
-        <Button
+        </Link>
+        <Link
           variant="ghost"
           color="#FEFFFF"
           fontWeight="thin"
@@ -38,10 +43,12 @@ export default function Navbar() {
           _hover={{
             color: "#FFEEEE",
           }}
+          as={ReachLink}
+          to="/menu"
         >
           Menu
-        </Button>
-        <Button
+        </Link>
+        <Link
           variant="ghost"
           color="#FEFFFF"
           fontWeight="thin"
@@ -49,10 +56,12 @@ export default function Navbar() {
           _hover={{
             color: "#FFEEEE",
           }}
+          as={ReachLink}
+          to="/"
         >
           Drinks
-        </Button>
-        <Button
+        </Link>
+        <Link
           variant="ghost"
           color="#FEFFFF"
           fontWeight="thin"
@@ -60,10 +69,12 @@ export default function Navbar() {
           _hover={{
             color: "#FFEEEE",
           }}
+          as={ReachLink}
+          to="/"
         >
           Catering
-        </Button>
-        <Button
+        </Link>
+        <Link
           variant="ghost"
           color="#FEFFFF"
           fontWeight="thin"
@@ -71,9 +82,11 @@ export default function Navbar() {
           _hover={{
             color: "#FFEEEE",
           }}
+          as={ReachLink}
+          to="/"
         >
           Contact
-        </Button>
+        </Link>
 
         <Box
           as="span"
