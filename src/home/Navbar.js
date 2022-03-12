@@ -30,8 +30,8 @@ export default function Navbar() {
           _hover={{
             color: "#FFEEEE",
           }}
-          as={ReachLink}
-          to="/"
+          // as={ReachLink}
+          href="#about"
         >
           About
         </Link>
