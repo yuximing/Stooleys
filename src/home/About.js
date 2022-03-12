@@ -1,13 +1,12 @@
 import React from "react";
 import { Heading } from "@chakra-ui/react";
-import { HStack, VStack } from "@chakra-ui/react";
-import { IconButton } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
 import { Flex } from "@chakra-ui/react";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+
 import { Text } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
+
+import SocialsList from './SocialsList'
 
 function About() {
   return (
@@ -42,41 +41,7 @@ function About() {
         </Heading>
 
         <VStack align="flex-start" color="#EEE2E2" height="299px" width="68vw">
-          <HStack width="144px" height="25px">
-            <a
-              href="https://www.facebook.com/stooleysbg/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <input type="button" class="button" />
-              <IconButton
-                backgroundColor="transparent"
-                icon={<FaFacebookF />}
-              ></IconButton>
-            </a>
-            <a
-              href="https://twitter.com/stooleysbg"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <input type="button" class="button" />
-              <IconButton
-                backgroundColor="transparent"
-                icon={<FaTwitter />}
-              ></IconButton>
-            </a>
-            <a
-              href="https://www.instagram.com/stooleysbargrill/?hl=en"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <input type="button" class="button" />
-              <IconButton
-                backgroundColor="transparent"
-                icon={<FaInstagram />}
-              ></IconButton>
-            </a>
-          </HStack>
+          <SocialsList/>
           <Divider orientation="horizontal" width="341px" />
           <div></div>
           <text>
