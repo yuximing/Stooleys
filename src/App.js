@@ -38,6 +38,7 @@ function App() {
         <Landing />
         <AboutUs />
         <OurFood />
+        <Footer/>
       </ChakraProvider>
     </div>
   );
