@@ -1,5 +1,6 @@
 import Landing from "./home/Landing";
 import Navbar from "./home/Navbar";
+import Footer from './home/Footer'
 import { ChakraProvider } from "@chakra-ui/react";
 import AboutUs from "./home/About";
 import { extendTheme } from "@chakra-ui/react";
