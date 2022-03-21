@@ -1,10 +1,12 @@
 import React from "react";
-import { Heading } from "@chakra-ui/react";
+import { Heading, HStack, IconButton } from "@chakra-ui/react";
 import { VStack } from "@chakra-ui/react";
 import { Flex } from "@chakra-ui/react";
-
 import { Text } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 import SocialsList from "./SocialsList";
 
