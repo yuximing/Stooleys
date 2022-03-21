@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import foodImg from "../assets/foodImg.png";
 import {
   Flex,

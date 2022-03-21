@@ -1,13 +1,17 @@
-import Landing from "./home/Landing";
-import Navbar from "./home/Navbar";
-import Footer from './home/Footer'
 import { ChakraProvider } from "@chakra-ui/react";
-import AboutUs from "./home/About";
 import { extendTheme } from "@chakra-ui/react";
 import "@fontsource/lexend/400.css";
 import "@fontsource/lexend/700.css";
 import "@fontsource/fraunces/700.css";
-import OurFood from "./home/OurFood";
+import Home from "./home/Home.js";
+import Menu from "./menu-drinks/Menu";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link as RouteLink,
+} from "react-router-dom";
+import Navbar from "./home/Navbar";
 
 const theme = extendTheme({
   colors: {
@@ -33,15 +37,15 @@ const theme = extendTheme({
 
 function App() {
   return (
-    <div>
-      <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme}>
+      <Router>
         <Navbar />
-        <Landing />
-        <AboutUs />
-        <OurFood />
-        <Footer/>
-      </ChakraProvider>
-    </div>
+        <Routes>
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+    </ChakraProvider>
   );
 }
 
