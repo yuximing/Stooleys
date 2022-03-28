@@ -1,5 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
+import Catering from "./Catering/Catering"
 import "@fontsource/lexend/400.css";
 import "@fontsource/lexend/700.css";
 import "@fontsource/fraunces/700.css";
@@ -38,13 +39,14 @@ const theme = extendTheme({
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Router>
+      {/* <Router>
         <Navbar />
         <Routes>
           <Route path="/menu" element={<Menu />} />
           <Route path="/" element={<Home />} />
         </Routes>
-      </Router>
+      </Router> */}
+      <Catering></Catering>
     </ChakraProvider>
   );
 }
