@@ -20,11 +20,12 @@ function Catering() {
             >
             </Image>
 
-            <VStack>
+            <VStack w="40%" mx="auto">
 
                 <Heading
                     color="#FEFFFF"
                     fontFamily='Fraunces'
+                    fontSize="60px"
                 >
                     Catering Service
                 </Heading>
@@ -41,20 +42,24 @@ function Catering() {
                     Whether you have a team building exercise, a bridal shower, a formal or casual dinner or a luncheon for an excursion,
                     we will cater to your needs by preparing bespoke menus for the occasion.
 
-                    <ul>
-                        <li>Private party Dinners</li>
-                        <li>Wedding Receptions</li>
-                        <li>Conferences</li>
-                        <li>Graduations</li>
-                        <li>Birthdays</li>
-                        <li>Milestone events</li>
-                        <li>Special events</li>
-                        <li>Tour lunches</li>
-                    </ul>
+                    <Flex border="1px" borderColor="#EEE2E2" justifyContent="space-around" py="1rem" marginY="1.5rem">
+                        <ul>
+                            <li>Private party Dinners</li>
+                            <li>Wedding Receptions</li>
+                            <li>Conferences</li>
+                            <li>Graduations</li>
+                        </ul>
+                        <ul>
+                            <li>Birthdays</li>
+                            <li>Milestone events</li>
+                            <li>Special events</li>
+                            <li>Tour lunches</li>
+                        </ul>
+                    </Flex>
 
                     <Heading
                         fontFamily='Fraunces'
-                        fontSize='48px'
+                        fontSize='40px'
                         color='#FEFFFF'
                     >
                         Let us do the work for you
