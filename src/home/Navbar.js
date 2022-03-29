@@ -70,7 +70,7 @@ export default function Navbar() {
             color: "#FFEEEE",
           }}
           as={ReachLink}
-          to="/"
+          to="/catering"
         >
           Catering
         </Link>
