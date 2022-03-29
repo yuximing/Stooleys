@@ -1,10 +1,12 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
+import Catering from "./Catering/Catering";
 import "@fontsource/lexend/400.css";
 import "@fontsource/lexend/700.css";
 import "@fontsource/fraunces/700.css";
 import Home from "./home/Home.js";
 import Menu from "./menu-drinks/Menu";
+import Footer from "./home/Footer";
 import {
   BrowserRouter as Router,
   Routes,
@@ -43,8 +45,10 @@ function App() {
         <Routes>
           <Route path="/menu" element={<Menu />} />
           <Route path="/" element={<Home />} />
+          <Route path="/catering" element={<Catering />} />
         </Routes>
       </Router>
+      <Footer />
     </ChakraProvider>
   );
 }
