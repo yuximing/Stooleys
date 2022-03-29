@@ -14,7 +14,8 @@ function Catering() {
       justifyContent="space-between"
       margin="0"
       p="0"
-      pt="9%"
+      //   pt="9%"
+      pt="1rem"
     >
       <Image src={img}></Image>
 
