@@ -47,6 +47,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/" element={<Home />} />
           <Route path="/catering" element={<Catering />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </Router>
       <Footer />
