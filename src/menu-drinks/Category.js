@@ -13,7 +13,7 @@ import Item from "./Item";
 const Category = (data) => {
   return (
     <section id={data.category.id}>
-      <Flex flexDirection="column" mb="8%">
+      <Flex flexDirection="column" mb="5%">
         <Heading fontFamily="accent" fontSize="2xl" color="#FEFFFF" mb="5%">
           {data.category.name}
         </Heading>

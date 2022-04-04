@@ -56,12 +56,12 @@ const Item = (data) => {
               fontWeight="bolder"
             >{`$${data.item.price}`}</Text>
           </Flex>
-          {data.item.description != "" ? (
-            <Text color="#8B8585" fontSize="sm" fontWeight="300px" mt="1.5rem">
-              {data.item.description}
-            </Text>
-          ) : null}
         </Flex>
+        {data.item.description != "" ? (
+          <Text color="#8B8585" fontSize="sm" fontWeight="300px" mt="1.5rem">
+            {data.item.description}
+          </Text>
+        ) : null}
         <Divider my="2rem" />
       </Flex>
     );
