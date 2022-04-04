@@ -4,6 +4,7 @@ import Landing from "./Landing";
 import { ChakraProvider, Box } from "@chakra-ui/react";
 
 import React from "react";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Landing />
       <AboutUs />
       <OurFood />
+      {/* <Footer /> */}
     </Box>
   );
 };
